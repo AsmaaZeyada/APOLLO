@@ -1,0 +1,26 @@
+#shots{
+    background-image: url(../images/parallax-1.jpg);
+    background-size: 100% 100%;
+    background-position: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+    &::after
+    {
+        @extend .layer-style;
+    }
+    .image-cloud{
+        h3{
+         @extend .testimonials-text;
+         width: 25rem;
+        }
+    }
+    .image-box{
+        .image{
+            img{
+                width: 100%;
+                
+            }
+        }
+        
+    }
+}

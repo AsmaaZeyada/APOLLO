@@ -1,0 +1,27 @@
+#contact{
+    @extend .main-bg;
+    .first-content{
+        position: relative;
+        &::after{
+           @extend .layer-style;
+        }
+    }
+    .third-content{
+        .first-content{
+            position: relative;
+            &::after{
+               @extend .layer-style;
+            }
+            p{
+                color: $second-color;
+                font-size: 1.1rem;
+                span{
+                    color: $general-color;
+                    font-size: 1.5rem;
+                    font-family: $second-font-family;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

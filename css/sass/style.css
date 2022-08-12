@@ -1,0 +1,865 @@
+.layer-style, #work .first-content::after, #team-skills::after, #team .first-content::after, #service .service-content::after, #service .first-content::after, #contact .third-content .first-content::after, #contact .first-content::after, #blog .image-section:hover::after, #shots::after, #about::after, #home .second-content .content::after, #home .first-content::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.start-text {
+  font-family: "Open Sans", sans-serif;
+  color: #EC572C;
+  font-size: 3rem;
+  line-height: 5rem;
+  text-transform: uppercase;
+}
+
+.logo {
+  font-family: "Poiret One", cursive;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.link-style, #work .brand-title a, #team .image-section .developer-info .brand-title a, .navbar .nav-item a, .start-section .main-content .start-layer .brand-title a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.section-style {
+  padding: 3rem 0;
+}
+
+.global-section-header {
+  font-family: "Poiret One", cursive;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #e9e9e9;
+}
+
+.span-style {
+  color: #EC572C;
+}
+
+.global-section-paragraph {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  padding-top: 20px;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.span-underline {
+  border-bottom: 1px dotted #EC572C;
+}
+
+.second-section-header {
+  font-family: "Poiret One", cursive;
+  color: #fff;
+  font-weight: 600;
+}
+
+.second-section-paragraph {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.about-title {
+  font-family: "Poiret One", cursive;
+  color: #EC572C;
+  font-weight: 600;
+}
+
+.about-paragraph {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+.about-text {
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+}
+
+.testimonials-text, .clients h3, #blog h3, #shots .image-cloud h3, #testimonials .move-image .image-cloud h3 {
+  font-family: "Poiret One", cursive;
+  background-color: #292929;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+}
+
+.main-bg, #work, #team-skills, #team, #service, #contact, #about, #home {
+  background-image: url(../images/classy_fabric.png);
+  background-repeat: repeat;
+}
+
+.start-section {
+  height: 100vh;
+}
+.start-section .main-content {
+  position: relative;
+}
+.start-section .main-content .layer-img {
+  position: relative;
+}
+.start-section .main-content .layer-img img {
+  height: 100vh;
+}
+.start-section .main-content .layer-img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(59, 56, 56, 0.2);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+.start-section .main-content .start-layer {
+  padding-bottom: 3rem;
+  position: absolute;
+  width: 70%;
+  top: 0;
+  left: 15%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.start-section .main-content .start-layer .logo {
+  font-size: 7rem;
+  line-height: 8rem;
+}
+.start-section .main-content .start-layer span {
+  color: #EC572C;
+}
+.start-section .main-content .start-layer hr {
+  width: 25%;
+  background-color: #fff;
+  border: none;
+  margin: auto;
+  height: 2px;
+}
+.start-section .main-content .start-layer .brand-title {
+  padding: 5px 2px;
+  margin-left: 2rem;
+  position: relative;
+}
+.start-section .main-content .start-layer .brand-title::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  background-color: #fff;
+  top: 105%;
+  left: 0;
+  transition: all 0.3s;
+}
+.start-section .main-content .start-layer .brand-title::before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  background-color: #fff;
+  bottom: 105%;
+  left: 0;
+  transition: all 0.3s;
+}
+.start-section .main-content .start-layer .brand-title:hover::after {
+  transform: rotate(45deg);
+  top: 50%;
+}
+.start-section .main-content .start-layer .brand-title:hover::before {
+  transform: rotate(-45deg);
+  top: 50%;
+}
+
+#home .first-content {
+  position: relative;
+}
+#home .second-content .content {
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.19), 2px 6px 5px rgba(0, 0, 0, 0.23);
+}
+#home .second-content .content .icons-content .icons {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #292929;
+  color: #EC572C;
+  font-size: 1.5rem;
+}
+#home .second-content .content .icons-content p {
+  width: 80%;
+}
+#home .second-content .content::after {
+  border-radius: 5px;
+}
+
+.navbar {
+  background-color: #202020;
+}
+.navbar .nav-item {
+  padding: 2px 3px;
+  margin-left: 10px;
+}
+.navbar .nav-item a {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: all 0.5s;
+}
+.navbar .nav-item a:hover {
+  color: #939393;
+}
+
+#about {
+  position: relative;
+}
+#about .icon-section span {
+  color: #fff;
+  font-size: 3rem;
+  font-family: "Poiret One", cursive;
+}
+#about .icon-section i {
+  color: #EC572C;
+  font-size: 2.5rem;
+  padding-left: 2px;
+}
+
+#testimonials {
+  background-image: url(../images/testimonial.jpg);
+  background-size: cover;
+  background-position: 100% 100%;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s;
+}
+#testimonials .move-image .image-cloud h3 {
+  width: 25rem;
+}
+#testimonials .move-image .text-slider {
+  background-color: #292929;
+}
+#testimonials .move-image .text-slider p {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+#testimonials .move-image .text-slider hr {
+  width: 25%;
+  background-color: #fff;
+  border: none;
+  margin: auto;
+  height: 2px;
+}
+#testimonials .test-image {
+  position: absolute;
+  top: 8%;
+  right: -100%;
+  -webkit-animation: move 12s infinite linear;
+          animation: move 12s infinite linear;
+}
+
+@-webkit-keyframes move {
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes move {
+  100% {
+    right: 100%;
+  }
+}
+#shots {
+  background-image: url(../images/parallax-1.jpg);
+  background-size: 100% 100%;
+  background-position: 100% 100%;
+  background-attachment: fixed;
+  position: relative;
+}
+#shots .image-cloud h3 {
+  width: 25rem;
+}
+#shots .image-box .image img {
+  width: 100%;
+}
+
+#blog {
+  background-image: url(../images/parallax-4.jpg);
+  background-size: 100%;
+  background-position: 100% 100%;
+  background-attachment: fixed;
+  height: 120vh;
+}
+#blog h3 {
+  width: 25rem;
+}
+#blog .image-section {
+  position: relative;
+}
+#blog .image-section img {
+  width: 100%;
+}
+#blog .image-section .layer-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10%;
+  left: 10px;
+  width: 110px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#blog .image-section .layer-content span {
+  color: #fff;
+}
+#blog .image-section:hover {
+  transition: all 0.5s;
+}
+#blog .image-section:hover .layer-content {
+  display: block;
+  background-color: transparent;
+}
+#blog .image-section:hover::after {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#blog .text-content {
+  background-color: rgba(17, 17, 16, 0.8);
+}
+#blog .text-content h6 {
+  font-size: 22px;
+  line-height: 26px;
+  color: #fff;
+  font-family: "Poiret One", cursive;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#blog .text-content p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: "Open Sans", sans-serif;
+}
+#blog .text-content button {
+  color: #fff;
+  background: #0c0c0c;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+#blog .text-content button:hover {
+  background-color: #000;
+}
+
+#contact .first-content {
+  position: relative;
+}
+#contact .third-content .first-content {
+  position: relative;
+}
+#contact .third-content .first-content p {
+  color: #fff;
+  font-size: 1.1rem;
+}
+#contact .third-content .first-content p span {
+  color: #EC572C;
+  font-size: 1.5rem;
+  font-family: "Poiret One", cursive;
+  font-weight: 700;
+}
+
+#service .first-content {
+  position: relative;
+}
+#service .service-content {
+  position: relative;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+#service .service-content .service-icon i {
+  color: #EC572C;
+  font-size: 3rem;
+}
+#service .service-content p {
+  border-bottom: 1px solid rgba(34, 34, 34, 0.4);
+}
+#service .service-content h6 {
+  border-bottom: 1px solid rgba(34, 34, 34, 0.4);
+}
+#service .service-content::after {
+  border-radius: 5px;
+}
+#service .service-content:hover {
+  background-color: #222;
+  transform: scale(1.05);
+}
+#service .service-content:hover p {
+  border-bottom: 0.5px solid rgba(177, 175, 175, 0.4);
+}
+#service .service-content:hover h6 {
+  border-bottom: 0.5px solid rgba(204, 204, 204, 0.4);
+}
+#service .service-content:hover .service-icon i {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.clients {
+  background-image: url(../images/parallax-3.jpg);
+  background-size: cover;
+  background-position: 100% 100%;
+  background-attachment: fixed;
+  height: 90vh;
+  position: relative;
+  transition: all 0.5s;
+}
+.clients h3 {
+  width: 25rem;
+}
+.clients .img-owl {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.clients .img-owl img {
+  width: 100%;
+}
+.clients .image1 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  -webkit-animation: moveImage1 4s infinite linear;
+          animation: moveImage1 4s infinite linear;
+}
+.clients .image2 {
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  -webkit-animation: moveImage2 3s infinite linear;
+          animation: moveImage2 3s infinite linear;
+}
+.clients .image3 {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  -webkit-animation: moveImage3 3s infinite linear;
+          animation: moveImage3 3s infinite linear;
+}
+.clients .image4 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  -webkit-animation: moveImage4 3s infinite linear;
+          animation: moveImage4 3s infinite linear;
+}
+.clients .image5 {
+  position: absolute;
+  top: 3%;
+  left: 10%;
+  -webkit-animation: moveImage5 3s infinite linear;
+          animation: moveImage5 3s infinite linear;
+}
+
+@-webkit-keyframes moveImage1 {
+  0% {
+    top: 15%;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: 50%;
+    transform: rotate(90deg);
+  }
+  100% {
+    top: 100%;
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes moveImage1 {
+  0% {
+    top: 15%;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: 50%;
+    transform: rotate(90deg);
+  }
+  100% {
+    top: 100%;
+    transform: rotate(180deg);
+  }
+}
+@-webkit-keyframes moveImage2 {
+  0% {
+    top: 20%;
+    transform: rotate(180deg);
+  }
+  50% {
+    top: 50%;
+    transform: rotate(90deg);
+  }
+  100% {
+    top: 90%;
+    transform: rotate(45deg);
+  }
+}
+@keyframes moveImage2 {
+  0% {
+    top: 20%;
+    transform: rotate(180deg);
+  }
+  50% {
+    top: 50%;
+    transform: rotate(90deg);
+  }
+  100% {
+    top: 90%;
+    transform: rotate(45deg);
+  }
+}
+@-webkit-keyframes moveImage3 {
+  0% {
+    top: 5%;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: 80%;
+    transform: rotate(90deg);
+  }
+  100% {
+    top: 90%;
+    transform: rotate(180deg);
+  }
+}
+@keyframes moveImage3 {
+  0% {
+    top: 5%;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: 80%;
+    transform: rotate(90deg);
+  }
+  100% {
+    top: 90%;
+    transform: rotate(180deg);
+  }
+}
+@-webkit-keyframes moveImage4 {
+  0% {
+    top: 5%;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: 70%;
+    transform: rotate(90deg);
+  }
+  100% {
+    top: 100%;
+    transform: rotate(180deg);
+  }
+}
+@keyframes moveImage4 {
+  0% {
+    top: 5%;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: 70%;
+    transform: rotate(90deg);
+  }
+  100% {
+    top: 100%;
+    transform: rotate(180deg);
+  }
+}
+@-webkit-keyframes moveImage5 {
+  0% {
+    top: 5%;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: 30%;
+    transform: rotate(90deg);
+  }
+  100% {
+    top: 100%;
+    transform: rotate(180deg);
+  }
+}
+@keyframes moveImage5 {
+  0% {
+    top: 5%;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: 30%;
+    transform: rotate(90deg);
+  }
+  100% {
+    top: 100%;
+    transform: rotate(180deg);
+  }
+}
+#team .first-content {
+  position: relative;
+}
+#team .image-section .image {
+  position: relative;
+}
+#team .image-section .image h6 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+#team .image-section .developer-info h5 {
+  color: #fff;
+  font-family: "Poiret One", cursive;
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: 0.7px;
+}
+#team .image-section .developer-info i {
+  color: #EC572C;
+}
+#team .image-section .developer-info p {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 3px;
+}
+#team .image-section .developer-info .brand-title {
+  padding: 5px 2px;
+  position: relative;
+}
+#team .image-section .developer-info .brand-title::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  background-color: #fff;
+  top: 105%;
+  left: 0;
+  transition: all 0.3s;
+}
+#team .image-section .developer-info .brand-title::before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  background-color: #fff;
+  bottom: 105%;
+  left: 0;
+  transition: all 0.3s;
+}
+#team .image-section .developer-info .brand-title:hover::after {
+  transform: rotate(45deg);
+  top: 50%;
+}
+#team .image-section .developer-info .brand-title:hover::before {
+  transform: rotate(-45deg);
+  top: 50%;
+}
+
+#team-skills {
+  position: relative;
+}
+#team-skills .skills-section .outer-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+#team-skills .skills-section .outer-circle .inner-cicle {
+  width: 75px;
+  height: 75px;
+  padding: 20px;
+  background-image: url(../images/rate.png);
+  background-size: cover;
+  background-position: center center;
+}
+#team-skills .skills-section .outer-circle .inner-cicle span {
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-weight: 700;
+}
+
+#work .first-content {
+  position: relative;
+}
+#work .brand-title {
+  padding: 5px 2px;
+  margin-left: 2rem;
+  position: relative;
+}
+#work .brand-title::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  background-color: #fff;
+  top: 105%;
+  left: 0;
+  transition: all 0.3s;
+}
+#work .brand-title::before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  background-color: #fff;
+  bottom: 105%;
+  left: 0;
+  transition: all 0.3s;
+}
+#work .brand-title:hover::after {
+  transform: rotate(45deg);
+  top: 50%;
+}
+#work .brand-title:hover::before {
+  transform: rotate(-45deg);
+  top: 50%;
+}
+#work ul {
+  width: 100%;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+#work ul li {
+  list-style: none;
+  color: #fff;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+#work .image-gallery-section .image {
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.5s;
+  position: relative;
+}
+#work .image-gallery-section .image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+#work .image-gallery-section .image:hover::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+#work li.active {
+  color: #EC572C;
+}
+
+@media (max-width: 1200px) and (min-width: 991px) {
+  #work .brand-title::after {
+    display: none;
+  }
+  #work .brand-title::before {
+    display: none;
+  }
+  #work .brand-title:hover a {
+    color: #EC572C;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255,.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  #work .brand-title::after {
+    display: none;
+  }
+  #work .brand-title::before {
+    display: none;
+  }
+  #work .brand-title:hover a {
+    color: #EC572C;
+  }
+}
+@media all and (max-width: 768px) {
+  .start-section .main-content .start-layer {
+    left: 0px;
+    right: 0px;
+    width: 98%;
+  }
+  .start-section .main-content .start-layer hr {
+    width: 50%;
+  }
+  .start-section .main-content .start-layer .logo {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .start-section .main-content .start-layer .brand-title::after {
+    display: none;
+  }
+  .start-section .main-content .start-layer .brand-title::before {
+    display: none;
+  }
+  .start-section .main-content .start-layer .brand-title:hover a {
+    color: #EC572C;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255,.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  #shots .image-box img {
+    width: 100%;
+  }
+  #testimonials {
+    padding-bottom: 5rem;
+  }
+  #testimonials .move-image .image-cloud h3 {
+    width: 50%;
+  }
+  #blog h3 {
+    width: 50%;
+  }
+  .clients h3 {
+    width: 50%;
+  }
+  #work .brand-title::after {
+    display: none;
+  }
+  #work .brand-title::before {
+    display: none;
+  }
+  #work .brand-title:hover a {
+    color: #EC572C;
+  }
+  #team .image-section .developer-info .brand-title::after {
+    display: none;
+  }
+  #team .image-section .developer-info .brand-title::before {
+    display: none;
+  }
+  #team .image-section .developer-info .brand-title:hover a {
+    color: #EC572C;
+  }
+  #shots .image-cloud h3 {
+    width: 50%;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,107 @@
+// general style
+.layer-style{
+    content: '';
+            background-color: rgba($color: #000, $alpha: .1);
+            width:100%;
+            height: 100%;
+            position: absolute;
+            top:0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+}
+////////////responsive
+// navbar style
+@mixin navbarstyle {
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255,.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+// start section
+.start-text{
+    font-family: $global-font-family;
+    color: $general-color;
+    font-size: 3rem;
+    line-height: 5rem;
+    text-transform: uppercase;
+}
+.logo{
+    font-family: $second-font-family;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $second-color;
+}
+.link-style{
+    text-decoration: none;
+    color: $second-color;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-family: $global-font-family;
+}
+@mixin brand {
+    content: '';
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    background-color: $second-color;
+}
+///////home
+.section-style{
+    padding:3rem 0 ;
+}
+.global-section-header{
+    font-family:$second-font-family ;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+    color:$text-color;
+}
+
+.span-style{
+    color:$general-color;
+}
+.global-section-paragraph{
+    font-family: $global-font-family;
+    color:$second-color;
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.span-underline{
+    border-bottom: 1px dotted $general-color;
+}
+// second section
+.second-section-header{
+    font-family: $second-font-family;
+    color:$second-color;
+    font-weight: 600;
+}
+.second-section-paragraph{
+    font-family: $global-font-family;
+    color:$second-color;
+    font-weight: 500;
+    line-height: 1.4;
+}
+/////////about
+.about-title{
+    font-family: $second-font-family;
+    color:$general-color;
+    font-weight: 600;
+}
+.about-paragraph{
+    color:$second-color;
+    font-family: $global-font-family;
+    font-weight: 500;
+}
+.about-text{
+    color:$second-color;
+     font-size: 1.3rem;
+     line-height: 1.2;
+     font-family: $global-font-family;
+     font-weight: 100;
+}
+//testimonials
+.testimonials-text{
+    font-family:$second-font-family;
+    background-color: $icon-bg;
+    font-weight: 600;
+    letter-spacing: .7px;
+}

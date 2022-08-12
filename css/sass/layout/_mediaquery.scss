@@ -1,0 +1,156 @@
+@media (max-width:1200px)and(min-width:991px) {
+    //works
+    #work{
+        .brand-title{
+            &::after{
+               display: none;
+            }
+            &::before{
+               display: none;
+            }
+            &:hover{
+                a{
+                  color: $general-color;
+                }
+            }
+        }
+    }
+  }
+@media (min-width:768px)and(max-width:991px){
+//navbar
+    .navbar-toggler-icon{
+    @include navbarstyle;
+   }
+     //works
+     #work{
+        .brand-title{
+            &::after{
+               display: none;
+            }
+            &::before{
+               display: none;
+            }
+            &:hover{
+                a{
+                  color: $general-color;
+                }
+            }
+        }
+    }
+}
+// media mobile
+@media all and (max-width:768px){
+//    start section 
+    .start-section{
+        .main-content{
+            .start-layer{
+                left: 0px;
+                right: 0px;
+                width: 98%;
+                hr{
+                    width: 50%;
+                }
+                .logo{
+                    font-size: 3rem;
+                    line-height: 3rem;  
+                }
+                .brand-title{
+                    &::after{
+                       display: none;
+                    }
+                    &::before{
+                       display: none;
+                    }
+                    &:hover{
+                        a{
+                          color: $general-color;
+                        }
+                    }
+                }
+            }  
+        }
+    }
+    //navbar
+   // .navbar-light{
+        .navbar-toggler-icon{
+         @include navbarstyle;
+       
+        }
+   // }
+    //shots
+    #shots{
+        .image-box{
+            // width:100% !important;
+            // margin: auto !important;
+           
+            img{
+                width: 100%;
+            }
+        }
+    }
+   // testimonials
+    #testimonials{
+        .move-image{
+            .image-cloud{
+                h3{
+                 width: 50%;
+                }
+            } 
+        }  
+       padding-bottom: 5rem;  
+    }
+    //blog
+    #blog{
+        h3{
+            width: 50%;
+        }
+    }
+    .clients{
+        h3{
+            width: 50%;
+        }
+    }
+    //works
+    #work{
+        .brand-title{
+            &::after{
+               display: none;
+            }
+            &::before{
+               display: none;
+            }
+            &:hover{
+                a{
+                  color: $general-color;
+                }
+            }
+        }
+    }
+//    team
+    #team{
+       .image-section{
+            .developer-info{
+                .brand-title{
+                    &::after{
+                       display: none;
+                    }
+                    &::before{
+                       display: none;
+                    }
+                    &:hover{
+                        a{
+                          color: $general-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #shots{
+        .image-cloud{
+            h3{
+              width: 50%;
+            }
+        }
+    }
+}

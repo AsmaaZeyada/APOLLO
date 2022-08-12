@@ -1,0 +1,17 @@
+.navbar{
+    background-color: $nav-color ;
+   .nav-item{
+    padding: 2px 3px;
+    margin-left: 10px;
+    a{
+      @extend .link-style; 
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: .5px;
+      transition: all .5s; 
+      &:hover{
+        color: #939393;
+      }
+    }
+   }
+}

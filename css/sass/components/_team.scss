@@ -1,0 +1,97 @@
+#team{
+    @extend .main-bg;
+    .first-content{
+        position: relative;
+        &::after{
+           @extend .layer-style;
+        }
+    }
+    .image-section{
+        .image{
+           position: relative;
+           
+           h6{
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+           }
+        }
+        .developer-info{
+            h5{
+                color: $second-color;
+                font-family: $second-font-family;
+                font-weight: 600;
+                font-size: 1.3rem;
+                letter-spacing: .7px;
+            }
+            i{
+                color: $general-color;
+            }
+            p{
+                font-family: $global-font-family;
+                margin-bottom: 3px;
+                
+            }
+            .brand-title{
+                padding: 5px 2px;
+                a{
+                  @extend .link-style;
+                }
+                position: relative;
+               
+                &::after{
+                    @include brand;
+                    top:105%;
+                    left: 0;
+                    transition: all .3s;
+                }
+                &::before{
+                    @include brand;
+                    bottom:105%;
+                    left: 0;
+                    transition: all .3s;
+                }
+                &:hover{
+                    &::after{
+                        transform: rotate(45deg);
+                        top:50%
+                    }
+                    &::before{
+                        transform: rotate(-45deg);
+                        top:50%
+                    }
+                }
+            }
+        }
+    }
+}
+////////team skills 
+#team-skills{
+    @extend .main-bg;
+    position: relative;
+    &::after{
+        @extend .layer-style;
+    }
+    .skills-section{
+        .outer-circle{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px solid $second-color;
+            .inner-cicle{
+                width: 75px;
+                height: 75px;
+                padding: 20px;
+                background-image: url(../images/rate.png);
+                background-size:cover;
+                background-position: center center;
+               span{
+                font-size: 2rem;
+                font-family: $global-font-family;
+                color: $second-color;
+                font-weight: 700;
+               }
+            }
+        }
+    }
+}

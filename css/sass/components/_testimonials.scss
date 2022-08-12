@@ -1,0 +1,52 @@
+#testimonials{
+    background-image: url(../images/testimonial.jpg);
+    background-size: cover ;
+    background-position: 100% 100%;
+    background-attachment: fixed;
+   
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+    .move-image{
+        .image-cloud{
+            h3{
+             @extend .testimonials-text;
+             width: 25rem;
+            }
+        }
+        .text-slider{
+            background-color:  $icon-bg;
+            p{
+                font-family:$global-font-family;
+                color: $second-color;
+                font-weight:600;
+                font-size: 1.2rem;
+                letter-spacing: .5px;
+                
+            }
+            hr{
+                width: 25%;
+                background-color:$second-color ;
+                border: none;
+                 margin: auto;
+                height: 2px;
+                
+            }
+        }
+       
+       
+        
+       
+    }
+ 
+    .test-image{
+        position: absolute;
+        top:8%;
+        right: -100%;
+        animation:move 12s infinite linear ;
+    }  
+}
+@keyframes move{
+   100%{right: 100%;}
+}
+

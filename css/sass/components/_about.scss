@@ -1,0 +1,21 @@
+#about{
+    @extend .main-bg;
+    position: relative;
+    &::after{
+        @extend .layer-style;
+    }
+    
+    .icon-section{
+        span{
+            color: $second-color;
+            font-size: 3rem;
+            font-family:$second-font-family;
+        }
+        i{
+            color: $general-color;
+            font-size: 2.5rem;
+            padding-left: 2px;
+        }
+        
+    }
+}

@@ -1,0 +1,82 @@
+.start-section{
+    height: 100vh;
+    .main-content{
+        .layer-img{
+            img{
+                height: 100vh;
+            }
+            position: relative;
+            &::after{
+                content:'';
+                width: 100%;
+                height: 100%;
+                background-color: rgba($color: rgb(59, 56, 56), $alpha: .2);
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                position: absolute;
+            }
+        }
+
+        position: relative;
+        .start-layer{
+            padding-bottom: 3rem;
+            position: absolute;
+            width: 70%;
+            top:0;
+            left: 15%;
+            background-color: rgba(0,0,0,.6);
+            .logo{
+                font-size: 7rem;
+                line-height: 8rem;
+            }
+            span{
+                color: $general-color;
+            }
+            hr{
+                width: 25%;
+                background-color:$second-color ;
+                border: none;
+                 margin: auto;
+                height: 2px;
+                
+            }
+            .brand-title{
+                padding: 5px 2px;
+                margin-left: 2rem;
+                a{
+                    @extend .link-style;
+                }
+                position: relative;
+                &::after{
+                    @include brand;
+                    top:105%;
+                    left: 0;
+                    transition: all .3s;
+                }
+                &::before{
+                    @include brand;
+                    bottom:105%;
+                    left: 0;
+                    transition: all .3s;
+                }
+                &:hover{
+                    &::after{
+                        transform: rotate(45deg);
+                        top:50%
+                    }
+                    &::before{
+                        transform: rotate(-45deg);
+                        top:50%
+                    }
+                }
+            }
+        }
+    }
+   
+    
+        
+
+   
+}
